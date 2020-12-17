@@ -1,4 +1,4 @@
-cask "basictex-m1-base" do
+cask "basictex-base" do
   version "2020.0407"
 
   url "http://mirror.ctan.org/systems/mac/mactex/BasicTeX.pkg"
