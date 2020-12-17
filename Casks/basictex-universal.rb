@@ -1,16 +1,19 @@
 cask "basictex-universal" do
     version "2020"
   
+    sha256 "3b6080e94b7a8e3fa07e55e844e74afa6650ced0a27ce90b2d87855f23750b82"
+
     url "https://www.tug.org/mactex/BasicTeX-2020-Universal.pkg"
-    name "M1BasicTeX"
+    name "BasicTeXUniversal"
     desc "Compact TeX distribution as alternative to the full TeX Live / MacTeX"
-    homepage "https://www.tug.org/mactex/morepackages.html"
+    homepage "https://www.tug.org/mactex/aboutarm.html"
   
     conflicts_with cask: [
       "mactex-no-gui",
       "mactex",
     ]
-    depends_on macos: ">= :big_sur"
+  
+    depends_on macos: ">= :big_sur", cask: "basictex-base"
   
     pkg "BasicTeX-2020-Universal.pkg"
   

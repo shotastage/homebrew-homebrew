@@ -1,6 +1,7 @@
 cask "basictex-base" do
   version "2020.0407"
 
+  sha256 "c6a27c95a8af3bc26121cc3be415f3fc7120ffaa4ff4c1a860a7fe9fe78ac31e"
   url "http://mirror.ctan.org/systems/mac/mactex/BasicTeX.pkg"
   name "BasicTeX"
   desc "Compact TeX distribution as alternative to the full TeX Live / MacTeX"
@@ -9,6 +10,7 @@ cask "basictex-base" do
   conflicts_with cask: [
     "mactex-no-gui",
     "mactex",
+    "basictex",
   ]
   depends_on macos: ">= :big_sur"
 
