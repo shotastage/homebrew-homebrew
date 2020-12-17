@@ -8,6 +8,7 @@ cask "visual-studio-code-asr" do
     homepage "https://code.visualstudio.com/"
   
     auto_updates true
+    conflicts_with cask: "visual-studio-code"
 
     app "Visual Studio Code - Insiders.app"
     binary "#{appdir}/Visual Studio Code - Insiders.app/Contents/Resources/app/bin/code", target: "code-insiders"
