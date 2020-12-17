@@ -2,7 +2,7 @@ cask "microsoft-edge-asr" do
     version "89.0.736.0"
     sha256 "3796dabd5ba4268b298493e250539cd671fd9a65b4ae6571a41cb98e3e5d5ad1"
   
-    url "https://officecdn-microsoft-com.akamaized.net/pr/03adf619-38c6-4249-95ff-4a01c0ffc962/MacAutoupdate/MicrosoftEdgeCanary-#{version}.pkg"
+    url "https://officecdn-microsoft-com.akamaized.net/pr/03adf619-38c6-4249-95ff-4a01c0ffc962/MacAutoupdate/MicrosoftEdgeCanary-#{version}.pkg",
         verified: "officecdn-microsoft-com.akamaized.net/"
     name "Microsoft Edge"
     desc "Multi-platform web browser"
