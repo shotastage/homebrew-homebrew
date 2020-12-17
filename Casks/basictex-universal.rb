@@ -1,4 +1,4 @@
-cask "m1-basictex" do
+cask "basictex-universal" do
     version "2020"
   
     url "https://www.tug.org/mactex/BasicTeX-2020-Universal.pkg"
@@ -14,7 +14,7 @@ cask "m1-basictex" do
   
     pkg "BasicTeX-2020-Universal.pkg"
   
-    uninstall pkgutil: "org.tug.mactex.basictex#{version.major}",
+    uninstall pkgutil: "org.tug.mactex.basictexuniversal",
               delete:  [
                 "/usr/local/texlive/#{version.major}basic",
                 "/etc/paths.d/TeX",
