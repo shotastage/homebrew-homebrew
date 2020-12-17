@@ -1,4 +1,4 @@
-cask "slack" do
+cask "slack-asr" do
     version "4.12.0"
     sha256 "d4f0fac98143c3f2db1a6883f3221c65deab704b9a13543de8fc5bf771b6c8ae"
   
