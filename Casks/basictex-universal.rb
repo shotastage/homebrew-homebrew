@@ -19,10 +19,7 @@ cask "basictex-universal" do
   
     uninstall pkgutil: "org.tug.mactex.basictexuniversal",
               delete:  [
-                "/usr/local/texlive/#{version.major}basic",
-                "/etc/paths.d/TeX",
-                "/etc/manpaths.d/TeX",
-                "/Library/TeX",
+                "/usr/local/texlive/#{version.major}basic/bin/custom",
               ]
   
     zap trash: [
