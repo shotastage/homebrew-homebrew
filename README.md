@@ -1,4 +1,8 @@
 # Shota Homebrew Cask Repository
 
-Under construction.
-]
+## Usage
+
+To add this repository, follow these commands.
+```
+brew tap shotastage/homebrew-shotacask
+```
