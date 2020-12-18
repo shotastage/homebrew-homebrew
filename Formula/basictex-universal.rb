@@ -8,9 +8,11 @@ class BasictexUniversal < Formula
 
 
   depends_on macos: ">= :big_sur", cask: "basictex-base"
-
-
-  conflicts_with "basictex"
+  conflicts_with cask: [
+    "mactex-no-gui",
+    "mactex",
+    "basictex",
+  ]
 
   def install
     system 'pkgutil', '--expand', 'BasicTeX-2020-Universal.pkg', './tmp/'
