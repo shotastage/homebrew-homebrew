@@ -5,7 +5,7 @@ cask "lobe-ai" do
   name "Microsoft Lobe"
   desc "Easy machine learning model maker"
   homepage "https://lobe.ai/"
-    
+
   auto_updates true
   
   app "Lobe.app"
