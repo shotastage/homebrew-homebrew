@@ -7,8 +7,9 @@ class BasictexUniversal < Formula
   sha256 "3b6080e94b7a8e3fa07e55e844e74afa6650ced0a27ce90b2d87855f23750b82s"
 
 
-  depends_on macos: ">= :big_sur", cask: "basictex-base"
-  
+  depends_on macos: ">= :big_sur"
+  depends_on cask: "basictex-base"
+
   conflicts_with cask: [
     "mactex-no-gui",
     "mactex",
