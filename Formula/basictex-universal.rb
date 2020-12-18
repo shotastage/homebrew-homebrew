@@ -8,6 +8,7 @@ class BasictexUniversal < Formula
 
 
   depends_on macos: ">= :big_sur", cask: "basictex-base"
+  
   conflicts_with cask: [
     "mactex-no-gui",
     "mactex",
@@ -24,12 +25,6 @@ class BasictexUniversal < Formula
     system "pkgutil", *args1
     system "pax", "-rz", "-f", "./tmp/BasicTeX-2020-Universal-Start.pkg/Payload"
     system "mv", "./tmp/usr/local/texlive/2020/bin/custom", "/usr/local/texlive/2020/bin/"
-  end
-
-  def caveats
-    <<~EOS
-      This is unofficial version Tex.
-    EOS
   end
 
   test do
