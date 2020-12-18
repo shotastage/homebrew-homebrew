@@ -1,4 +1,4 @@
-class BasicTeXUniversal < Formula
+class BasicteXUniversal < Formula
   version "2020"
   sha256 "3b6080e94b7a8e3fa07e55e844e74afa6650ced0a27ce90b2d87855f23750b82s"
   url "https://www.tug.org/mactex/BasicTeX-2020-Universal.pkg"
