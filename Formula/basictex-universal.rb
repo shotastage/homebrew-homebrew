@@ -33,6 +33,5 @@ class BasictexUniversal < Formula
   end
 
   test do
-    return true
   end
 end
