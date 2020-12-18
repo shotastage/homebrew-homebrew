@@ -33,5 +33,6 @@ class BasictexUniversal < Formula
   end
 
   test do
+    system "false"
   end
 end
