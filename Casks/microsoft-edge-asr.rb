@@ -9,8 +9,8 @@ cask "microsoft-edge-asr" do
     homepage "https://www.microsoft.com/edge"
   
     auto_updates true
-    depends_on cask: "microsoft-auto-update"
-  
+    depends_on macos: ">= :arm64_big_sur", cask: "microsoft-auto-update"
+
     pkg "MicrosoftEdgeCanary-#{version}.pkg",
         choices: [
           {

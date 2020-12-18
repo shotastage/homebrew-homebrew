@@ -9,8 +9,8 @@ cask "google-chrome-asr" do
     homepage "https://www.google.com/chrome/"
   
     auto_updates true
-    depends_on macos: ">= :big_sur"
-  
+    depends_on macos: ">= :arm64_big_sur"
+
     app "Google Chrome.app"
   
     zap trash:     [

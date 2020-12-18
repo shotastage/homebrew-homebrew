@@ -9,6 +9,8 @@ cask "slack-asr" do
     desc "Team communication and collaboration software"
     homepage "https://slack.com/"
   
+    depends_on macos: ">= :arm64_big_sur"
+
     auto_updates true
     conflicts_with cask: "homebrew/cask-versions/slack-beta"
   
