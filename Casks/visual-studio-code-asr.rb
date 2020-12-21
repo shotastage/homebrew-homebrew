@@ -1,6 +1,6 @@
 cask "visual-studio-code-asr" do
-    version "1.53.0,2f8dee4d87cf215fd2ece45aa4ecfb097b345788"
-    sha256 "4a90fe42e1ddb48523c5cefa7bcb1b5c857ac1f6c48763579a5d2bb85c1bb10f"
+    version "1.53.0,4a875e23d20b64504a818834f3fa4c40adb8d480"
+    sha256 "924f29741ef119cf954513c00a1e1b0d99ed354bda417ad698769c42abe9666f"
     url "https://az764295.vo.msecnd.net/insider/#{version.after_comma}/VSCode-darwin-arm64.zip"
     name "Microsoft Visual Studio Code"
     name "VS Code"
