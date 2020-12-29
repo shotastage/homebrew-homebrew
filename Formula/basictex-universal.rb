@@ -16,7 +16,7 @@ class BasictexUniversal < Formula
     system "pkgutil", "--expand", "BasicTeX-2020-Universal.pkg", "./tmp/"
     system "pax", "-rz", "-f", "./tmp/BasicTeX-2020-Universal-Start.pkg/Payload"
     system "ls", "-a"
-    system "mv", "./tmp/usr/local/texlive/2020/bin/custom", "/usr/local/texlive/2020/bin/"
+    system "mv", "./usr/local/texlive/2020/bin/custom", "/usr/local/texlive/2020/bin/"
   end
 
   test do
