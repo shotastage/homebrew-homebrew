@@ -15,8 +15,16 @@ class BasictexUniversal < Formula
   def install
     system "pkgutil", "--expand", "BasicTeX-2020-Universal.pkg", "./tmp/"
     system "pax", "-rz", "-f", "./tmp/BasicTeX-2020-Universal-Start.pkg/Payload"
-    system "sudo", "mv", "./usr/local/texlive/2020basic/bin/custom", "/usr/local/texlive/2020basic/bin/"
-    system "sudo", "echo", "/usr/local/texlive/2020basic/bin/", ">", "/etc/paths.d/Tex"
+    system "mv", "./usr/local/texlive/", "~/.local/"
+  end
+
+  def caveats
+    <<~EOS
+      TexLive Universal Binary has been installed.
+      Path: $HOME/.local/texlive/2020basic/bin/custom/
+
+      To enable this path, please export.
+    EOS
   end
 
   test do
