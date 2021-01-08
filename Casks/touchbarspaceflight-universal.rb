@@ -9,5 +9,7 @@ cask "touchbarspaceflight-universal" do
   app "TouchBarSpaceFight.app"
   
   zap trash: [
+    "~/Library/Application Scripts/com.digital-nichan.TouchBarSpaceFight",
+    "~/Library/Containers/com.digital-nichan.TouchBarSpaceFight",
   ]
 end
