@@ -9,5 +9,7 @@ cask "steve2-universal" do
   app "Steve ][.app"
   
   zap trash: [
+    "~/Library/Application Scripts/com.digital-nichan.com.trudnai.steveii",
+    "~/Library/Containers/com.digital-nichan.com.trudnai.steveii",
   ]
 end
