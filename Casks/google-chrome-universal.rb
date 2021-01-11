@@ -39,8 +39,8 @@ cask "google-chrome-asr" do
     rmdir:     [
         "/Library/Google",
         "~/Library/Application Support/Google",
-      "~/Library/Caches/Google",
-      "~/Library/Google",
+        "~/Library/Caches/Google",
+        "~/Library/Google",
     ],
     launchctl: [
         "com.google.keystone.agent",
