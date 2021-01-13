@@ -11,7 +11,7 @@ cask "microsoft-edge-asr" do
     auto_updates true
     depends_on macos: ">= :arm64_big_sur", cask: "microsoft-auto-update"
 
-    pkg "MicrosoftEdgeCanary-#{version}.pkg",
+    pkg "MicrosoftEdgeDev-#{version}.pkg",
         choices: [
           {
             "choiceIdentifier" => "com.microsoft.package.Microsoft_AutoUpdate.app", # Office16_all_autoupdate.pkg
