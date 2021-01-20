@@ -3,7 +3,8 @@ cask "android-studio-canary" do
     version "2020.3.1.4"
     sha256 "8d92a89733d6136bc630a9a2ea43da775cd49b20c7cb1f647a12d800cc271ed3"
   
-    url "https://r3---sn-oguelney.gvt1.com/edgedl/android/studio/ide-zips/#{version}/android-studio-#{version}-mac.zip"    name "Android Studio Preview"
+    url "https://r3---sn-oguelney.gvt1.com/edgedl/android/studio/ide-zips/#{version}/android-studio-#{version}-mac.zip"
+    name "Android Studio Preview"
     desc "Tools for building Android applications"
     homepage "https://developer.android.com/studio/"
   
