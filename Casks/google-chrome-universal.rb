@@ -1,9 +1,16 @@
 
 cask "google-chrome-universal" do
-    version "87.0.4280.141"
+    version "88.0.4324.96"
     sha256 :no_check
   
-    url "https://dl.google.com/chrome/mac/universal/stable/CHFA/googlechrome.dmg"
+    if Hardware::CPU.arm?
+        # Apple Silicon binary
+        url "https://dl.google.com/chrome/mac/universal/stable/CHFA/googlechrome.dmg"
+    else
+        # Intel version binary
+        url "https://dl.google.com/chrome/mac/stable/GGRO/googlechrome.dmg"
+    end
+
     name "Google Chrome"
     desc "Web browser"
     homepage "https://www.google.com/chrome/"
@@ -46,4 +53,10 @@ cask "google-chrome-universal" do
         "com.google.keystone.agent",
         "com.google.keystone.daemon",
     ]
+
+    caveats <<~EOS
+      Google Chrome for macOS
+      This cask will install adapted binary depending on your CPU architecture
+      different from the official cask repository.
+    EOS
 end
