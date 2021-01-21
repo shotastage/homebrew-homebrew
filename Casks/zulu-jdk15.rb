@@ -1,4 +1,4 @@
-cask "zulu-jdk-15" do
+cask "zulu-jdk15" do
     version "15.28.1013,15.0.1"
     sha256 "055a493236ed0023216f40d4e222ebc9cebd13bcaa8288d9f6c6c5c2d61f30ee"
   
