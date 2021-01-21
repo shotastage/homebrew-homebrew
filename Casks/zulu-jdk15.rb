@@ -9,4 +9,9 @@ cask "zulu-jdk15" do
     depends_on macos: ">= :arm64_big_sur"
   
     pkg "Double-Click to Install Zulu 15.pkg"
+
+    uninstall pkgutil: "com.azulsystems.zulu.#{version.major}",
+            delete:  [
+              "/Library/Java/JavaVirtualMachines/zulu-#{version.major}.jdk/",
+            ]
 end

@@ -28,10 +28,10 @@ cask "basictex-base" do
     "/usr/local/texlive/texmf-local",
     "~/Library/texlive/#{version.major}basic",
   ],
-      rmdir: [
-        "/usr/local/texlive",
-        "~/Library/texlive",
-      ]
+  rmdir: [
+    "/usr/local/texlive",
+    "~/Library/texlive",
+  ]
 
   caveats <<~EOS
     You must restart your terminal window for the installation of MacTex CLI tools to take effect.
