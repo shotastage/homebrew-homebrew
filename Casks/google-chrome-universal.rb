@@ -1,5 +1,5 @@
 
-cask "google-chrome-asr" do
+cask "google-chrome-universal" do
     version "87.0.4280.141"
     sha256 :no_check
   
