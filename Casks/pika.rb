@@ -9,5 +9,6 @@ cask "pika" do
   app "Pika.app"
   
   zap trash: [
+    "~/Library/Preferences/com.superhighfives.Pika.plist",
   ]
 end
