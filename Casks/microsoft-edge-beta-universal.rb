@@ -20,7 +20,7 @@ cask "microsoft-edge-beta-universal" do
           },
         ]
   
-    uninstall pkgutil: "com.microsoft.edgemac"
+    uninstall pkgutil: "com.microsoft.edgemac.Beta"
   
     zap trash: [
       "~/Library/Application Support/Microsoft Edge Beta",
