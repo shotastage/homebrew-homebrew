@@ -1,4 +1,3 @@
-
 cask "google-chrome-universal" do
     version "88.0.4324.96"
     sha256 :no_check
