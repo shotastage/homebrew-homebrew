@@ -1,7 +1,7 @@
 cask "visual-studio-code-asr" do
-    version "1.53.0,a48ef56fbf7767f55a193d7d5687addd1fc9239c"
-    sha256 "933fac74a20f854ba9d261e1a67fb13da6f6f9137ad9f953780b15fbbc4b9e70"
-    url "https://az764295.vo.msecnd.net/insider/#{version.after_comma}/VSCode-darwin-arm64.zip"
+    version "1.53.0,8490d3dde47c57ba65ec40dd192d014fd2113496"
+    sha256 "c7f2f804a5dca58720b913135c41735bf5aa2c5251db82a0e97cd3dc0974a024"
+    url "https://az764295.vo.msecnd.net/insider/#{version.after_comma}/VSCode-darwin-universal.zip"
     name "Microsoft Visual Studio Code"
     name "VS Code"
     desc "Open-source code editor"
