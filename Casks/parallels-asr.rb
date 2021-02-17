@@ -1,9 +1,9 @@
 # Based on: https://github.com/Homebrew/homebrew-cask/blob/HEAD/Casks/parallels.rb
 cask "parallels-asr" do
-  version "16.3.1-50393"
-  sha256 "790d2c09b6abb38506e00d3d376d763959a0d2c289b6a23d5b410239d7901f46"
+  version "16.3.2-50531"
+  sha256 "50cb03c5385fa5913e6e0fc00b978cd0722f8fa35e224d44b839173b7963e4f7"
 
-  url "https://download.parallels.com/desktop/v#{version.major}/#{version}/ParallelsDesktop-#{version}.dmg"
+  url "https://download.parallels.com/desktop/v16/16.3.2-50531/ParallelsDesktop-16.3.2-50531.dmg"
   appcast "https://kb.parallels.com/en/125053"
   name "Parallels Desktop"
   desc "Desktop virtualization software"
