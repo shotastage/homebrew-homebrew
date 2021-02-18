@@ -1,8 +1,8 @@
 cask "docker-preview-asr" do
-    version "20.10.0-desktop-M1"
-    sha256 "f6d2aa88d98a13e27f95d486b9bc165582707ad2b8075104f5d50959a5e19ddd"
+    version "20.10.0-desktop-M1.preview2"
+    sha256 "54377522f624ca4cd42a70dc64796de86749bcbf129f31e624806a27466b030e"
    
-    url "https://desktop.docker.com/mac/m1preview/Docker-AppleSilicon-Preview7.dmg"
+    url "https://desktop.docker.com/mac/stable/arm64/60984/Docker.dmg"
 
     name "Docker Desktop"
     name "Docker Community Edition"
