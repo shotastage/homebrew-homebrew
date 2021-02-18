@@ -1,8 +1,17 @@
-cask "docker-preview-asr" do
-    version "20.10.0-desktop-M1.preview2"
-    sha256 "54377522f624ca4cd42a70dc64796de86749bcbf129f31e624806a27466b030e"
+cask "docker-desktop" do
    
-    url "https://desktop.docker.com/mac/stable/arm64/60984/Docker.dmg"
+    if Hardware::CPU.arm?
+        # Apple Silicon binary
+        version "20.10.0-desktop-M1.preview2"
+        sha256 "54377522f624ca4cd42a70dc64796de86749bcbf129f31e624806a27466b030e"
+        url "https://desktop.docker.com/mac/stable/arm64/60984/Docker.dmg"
+    else
+        # Intel version binary
+        version "18.06.1-ce-mac73,26764"
+        sha256 "3429eac38cf0d198039ad6e1adce0016f642cdb914a34c67ce40f069cdb047a5"
+        url "https://desktop.docker.com/mac/stable/#{version.after_comma}/Docker.dmg"
+        auto_updates true
+    end
 
     name "Docker Desktop"
     name "Docker Community Edition"
