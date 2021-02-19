@@ -25,6 +25,6 @@ cask "visual-studio-code-asr" do
       "~/Library/Preferences/com.microsoft.VSCodeInsiders.helper.plist",
       "~/Library/Preferences/com.microsoft.VSCodeInsiders.plist",
       "~/Library/Saved Application State/com.microsoft.VSCode.savedState",
-      "~/.vscode",
+      "~/.vscode-insiders",
     ]
 end
