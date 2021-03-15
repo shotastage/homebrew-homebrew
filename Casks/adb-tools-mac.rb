@@ -11,12 +11,4 @@ cask "adb-tools-mac" do
     depends_on macos: ">= :arm64_big_sur"
 
     app "adbconnect.app"
-
-    zap trash: [
-      "~/Library/Android/sdk",
-    ],
-        rmdir: [
-          "~/AndroidStudioProjects",
-          "~/Library/Android",
-        ]
 end
