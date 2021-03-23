@@ -1,6 +1,6 @@
 cask "lobe-ai" do
-  version "0.8.1208.4"
-  sha256 "d84974d596d47ed1fe9a9a65f540bebc6c2cded5b2948c42806b4fd21028dcaa"
+  version "0.8.1208.5"
+  sha256 "40f229ef611db20e2b2c00dd9320a3d374f132240d0862ac66551e087ea62717"
   url "https://lobeprod.azureedge.net/downloads/macos/Lobe.zip"
   name "Microsoft Lobe"
   desc "Easy machine learning model maker"
