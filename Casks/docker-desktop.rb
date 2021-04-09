@@ -2,8 +2,8 @@ cask "docker-desktop" do
    
     if Hardware::CPU.arm?
         # Apple Silicon binary
-        version "20.10.3.preview2"
-        sha256 "54377522f624ca4cd42a70dc64796de86749bcbf129f31e624806a27466b030e"
+        version "20.10.3.preview3"
+        sha256 "648e36a83811c7041a97a41c050073b9ec50602c588e692501df2c14ef4b66a3"
         url "https://desktop.docker.com/mac/stable/arm64/60984/Docker.dmg"
     else
         # Intel version binary
