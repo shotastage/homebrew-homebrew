@@ -4,7 +4,7 @@ cask "docker-desktop" do
         # Apple Silicon binary
         version "20.10.3.preview3"
         sha256 "648e36a83811c7041a97a41c050073b9ec50602c588e692501df2c14ef4b66a3"
-        url "https://desktop.docker.com/mac/stable/arm64/60984/Docker.dmg"
+        url "https://desktop.docker.com/mac/stable/arm64/62632/Docker.dmg"
     else
         # Intel version binary
         version "18.06.1-ce-mac73,26764"
