@@ -1,23 +1,21 @@
 cask "slack-asr" do
     version "4.12.0"
     sha256 "d4f0fac98143c3f2db1a6883f3221c65deab704b9a13543de8fc5bf771b6c8ae"
-  
+
     url "https://downloads.slack-edge.com/releases/macos/#{version}/prod/arm64/Slack-#{version}-macOS.dmg",
         verified: "downloads.slack-edge.com/"
     appcast "https://macupdater.net/cgi-bin/check_urls/check_url_redirect.cgi?url=https://slack.com/ssb/download-osx"
     name "Slack"
     desc "Team communication and collaboration software"
     homepage "https://slack.com/"
-  
-    depends_on macos: ">= :arm64_big_sur"
 
     auto_updates true
     conflicts_with cask: "homebrew/cask-versions/slack-beta"
-  
+
     app "Slack.app"
-  
+
     uninstall quit: "com.tinyspeck.slackmacgap"
-  
+
     zap trash: [
       "~/Library/Application Scripts/com.tinyspeck.slackmacgap",
       "~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.tinyspeck.slackmacgap.sfl*",

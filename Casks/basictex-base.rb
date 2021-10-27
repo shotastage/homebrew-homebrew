@@ -12,7 +12,6 @@ cask "basictex-base" do
     "mactex",
     "basictex",
   ]
-  depends_on macos: ">= :big_sur"
 
   pkg "BasicTeX.pkg"
 

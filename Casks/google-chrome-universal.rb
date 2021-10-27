@@ -1,7 +1,7 @@
 cask "google-chrome-universal" do
     version "88.0.4324.96"
     sha256 :no_check
-  
+
     if Hardware::CPU.arm?
         # Apple Silicon binary
         url "https://dl.google.com/chrome/mac/universal/stable/CHFA/googlechrome.dmg"
@@ -13,12 +13,11 @@ cask "google-chrome-universal" do
     name "Google Chrome"
     desc "Web browser"
     homepage "https://www.google.com/chrome/"
-  
+
     auto_updates true
-    depends_on macos: ">= :arm64_big_sur"
 
     app "Google Chrome.app"
-  
+
     zap trash:     [
         "/Library/Caches/com.google.SoftwareUpdate.*",
         "/Library/Google/Google Chrome Brand.plist",

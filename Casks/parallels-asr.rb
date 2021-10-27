@@ -10,7 +10,6 @@ cask "parallels-asr" do
   homepage "https://www.parallels.com/products/desktop/"
 
   auto_updates true
-  depends_on macos: ">= :arm64_big_sur"
 
   app "Parallels Desktop.app"
 

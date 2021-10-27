@@ -9,19 +9,17 @@ cask "zulu-jdk15" do
       sha256 "991311eaa854b2c6ec7747d548d3208099b293ef2eb3727320ba83c875154777"
       url "https://cdn.azul.com/zulu/bin/zulu#{version.before_comma}-ca-jdk#{version.after_comma}-macosx_x64.dmg"
     end
-  
+
     name "Zulu Builds of OpenJDK"
     homepage "https://www.azul.com/downloads/zulu-community/?package=jdk"
-  
-    depends_on macos: ">= :big_sur"
-  
+
     pkg "Double-Click to Install Zulu 15.pkg"
 
     uninstall pkgutil: "com.azulsystems.zulu.#{version.major}",
             delete:  [
               "/Library/Java/JavaVirtualMachines/zulu-#{version.major}.jdk/",
             ]
-    
+
     caveats <<~EOS
       Zulu version OepnJDK Version 15 Latest for Apple Silicon ARM
     EOS
