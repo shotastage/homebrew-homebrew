@@ -13,7 +13,7 @@ cask "zulu-jdk17" do
     name "Zulu Builds of OpenJDK"
     homepage "https://www.azul.com/downloads/zulu-community/?package=jdk"
 
-    pkg "Double-Click to Install Zulu 17.pkg"
+    pkg "Double-Click to Install Azul Zulu 17.pkg"
 
     uninstall pkgutil: "com.azulsystems.zulu.#{version.major}",
             delete:  [
