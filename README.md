@@ -1,5 +1,7 @@
 # Shota Homebrew Cask Repository
 
+>> This repository is no longer maintained.
+
 ## Usage
 
 To add this repository, follow these commands.
