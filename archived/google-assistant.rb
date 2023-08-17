@@ -16,4 +16,3 @@ cask "google-assistant" do
       "~/Library/Saved Application State/com.redvirus.g-assist.savedState",
     ]
 end
-  
