@@ -9,4 +9,8 @@ cask "adb-tools-mac" do
     homepage "https://github.com/naman14/adb-tools-mac"
 
     app "adbconnect.app"
+
+    caveats <<~EOS
+      ⚠️ This cask is no longer maintained!
+    EOS
 end
